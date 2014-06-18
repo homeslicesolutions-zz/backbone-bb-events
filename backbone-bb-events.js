@@ -17,10 +17,10 @@
     if ( !BackboneClass ) return;
 
     // Create a new proto class with new applied Construtor
-    var NewBackboneClass = function( options ){
+    var NewBackboneClass = function(){
 
       // Call the old constructor
-      BackboneClass.prototype.constructor.call( this, options );
+      BackboneClass.prototype.constructor.apply( this, arguments );
       
       // Bind the BB Events
       this.delegateBBEvents( options && options.bbEvents );
