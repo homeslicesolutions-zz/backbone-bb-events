@@ -1,4 +1,17 @@
-!function(_, Backbone){
+//     Backbone.Collection.sorting v0.1.1
+//     by Joe Vu - joe.vu@homeslicesolutions.com
+//     For all details and documentation:
+//     https://github.com/homeslicesolutions/backbone-bb-events
+
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(['underscore', 'backbone'], factory);
+  } else {
+    // Browser globals
+    factory(_, Backbone);
+  }
+}(this, function(_, Backbone){
   'use strict'
 
   // Cached regex to split keys for delegate.
@@ -76,4 +89,4 @@
 
   return Backbone;
 
-}(_, Backbone);
+}));

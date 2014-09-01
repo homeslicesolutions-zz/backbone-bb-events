@@ -98,3 +98,10 @@ To use "listenToOnce", you just need to add it's pseudo-flag `:once` appended on
      'ring:once phoneCall' : 'lightUp'
 ```
 
+### Versions
+
+#### v0.1.1
+ - Added standard UMD wrapper
+
+#### v0.1
+ - First commit! 
